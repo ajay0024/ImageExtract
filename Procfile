@@ -1,1 +1,1 @@
-web: gunicorn icolors.wsgi
+web: gunicorn BisectImage.wsgi
