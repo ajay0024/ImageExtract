@@ -2,6 +2,7 @@ from django.shortcuts import render
 from PIL import Image
 import numpy as np
 from sklearn.cluster import MiniBatchKMeans
+from django.conf import settings
 
 
 def index(request):
@@ -11,7 +12,7 @@ def index(request):
         img = Image.open(file_img)
         img_address = 'tempo.jpg'
     else:
-        img = Image.open('static/images/3604882.jpg')
+        img = Image.open(settings.STATIC_URL+'images/3604882.jpg')
         img_address = '3604882.jpg'
     array = np.asarray(img)
     array = array.reshape(-1, 3)
