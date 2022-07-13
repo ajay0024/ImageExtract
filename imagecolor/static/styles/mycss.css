@@ -1,0 +1,14 @@
+
+[data-color]{
+  width: 100%;
+  aspect-ratio:1;
+}
+
+[data-color]:hover{
+  cursor: pointer;
+
+}
+.hex{
+  background-color: black;
+  color:white;
+}
