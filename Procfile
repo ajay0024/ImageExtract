@@ -1,1 +1,1 @@
-web: gunicorn imagecolor.wsgi
+web: gunicorn icolors.wsgi
