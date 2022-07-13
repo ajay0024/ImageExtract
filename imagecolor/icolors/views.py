@@ -31,6 +31,6 @@ def index(request):
 
 
 def uploaded_file(f):
-    with open('static/images/tempo.jpg', 'wb+') as destination:
+    with open(settings.STATIC_ROOT+'/images/tempo.jpg', 'wb+') as destination:
         for chunk in f.chunks():
             destination.write(chunk)
